@@ -462,7 +462,7 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
   display: block;
   margin-left: 110px;
 }
-.about-co .container .company h6 {
+.about-co .container .company p {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   color: #F94D1C;
@@ -474,12 +474,13 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
   font-size: 45px;
   margin-bottom: 40px;
 }
-.about-co .container .company p {
+.about-co .container .company h6 {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 32px;
+  color: black;
 }
-.about-co .container .company .p1 {
+.about-co .container .company h6 {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 32px;
@@ -1361,17 +1362,6 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
   margin-right: 20px;
 }
 
-.success {
-  color: green; 
-  opacity: 1;
-  transition: opacity 0.5s ease; 
-}
-
-.success.hidden {
-  opacity: 0;
-}
-
-
 .foot-info {
   background-color: #0E1021;
   position: relative;
@@ -1456,194 +1446,3 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
 .foot-wrapper .social-media :hover {
   transform: scale(1.8);
 }
-
-
-
-
-/* Contacts-Page */
-
-/* Lets Connect */
-.Connect-showcase {
-  background-color: #f0efe9;
-  position: relative;
-  height: 300px;
-  z-index: 0;
-  overflow: hidden;
-}
-.Connect-showcase .background-lines {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.Connect-showcase .container .content {
-  text-align: center;
-  padding-top: 100px;
-  
-  margin-left: 500px;
-  
-}
-.Connect-showcase .container .content  p {
-  display: inline;
-  margin-left: 20px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  
-
-}
-.Connect-showcase .container .content p :hover {
-  transform: scale(1.2);
-}
-.Connect-showcase .container .content h1 {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 56px;
-  margin-top: 5px;
-
-}
-
-/* Call us */
-.call-us {
-  
-  width: 1320px;
-  height: 206px;
-  display: flex;
-  justify-content: space-between;
-  
-  text-align: center;
-  align-items: center;
-  
-  margin-top: 114px;
-  margin-bottom: 80px;
-  margin-left:7% ;
-
-}
-
-.call-us .box-call {
-  width: 420px;
-  height: 206px;
-  border: 1px solid #dfdcdc;
-  padding: 50px;
-  display: flex;
-  justify-content:center ;
-  align-items: center;
-  box-shadow: 7px 7px 6px gray ;
-}
-.call-us .box-call i, .call-us .box-call h4, .call-us .box-call p {
-  margin: 10px 11px 40px 10px;
-  
-
-}
-.call-us .box-call p {
-  font-size: 18px;
-  margin-left: 30px;
-}
-.call-us .box-call h4 {
-  margin-top: 60px;
-  margin-left: 30px;
-  margin-bottom: -5px;
-}
-.call-us .box-call i {
-  font-size: 50px;
-}
-
-/* Leave A Message */
-.message {
-  width: auto;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-.message .message_cotent {
-  margin: 4rem 4rem 4rem 6rem;
-  background-color: #F0EFE9;
-  width: 100%;
-  padding: 3rem;
-}
-@media (max-width: 391px) {
-  .message .message_cotent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-  }
-  .message .message_cotent .form_contact {
-    margin-right: 50%;
-  }
-}
-.message .message_cotent .head_of_form {
-  display: grid;
-  justify-content: center;
-  font-size: 45px;
-  font-weight: 700;
-  font-family: "DM Sans", sans-serif;
-  margin: 2rem 0;
-}
-@media (max-width: 391px) {
-  .message .message_cotent .head_of_form {
-    margin-left: -6%;
-  }
-}
-.message .message_cotent .form_contact {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 70%;
-  margin-left: 12rem;
-  text-align: center;
-}
-.message .message_cotent .form_contact > input {
-  border: none;
-  height: 2.5rem;
-  border-radius: 3rem;
-  padding: 1.7rem;
-}
-.message .message_cotent .form_contact > textarea {
-  border: none;
-  border-radius: 2rem;
-  padding: 1.7rem;
-}
-.message .message_cotent .form_contact:focus {
-  outline: none;
-}
-.message .message_cotent .form_contact > button {
-  border: none;
-  background-color: #f9d783;
-  height: 2.5rem;
-  border-radius: 3rem;
-  padding: 1.7rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-.message .message_cotent .form_contact button .text_button {
-  font-size: 1rem;
-  font-weight: 400;
-  padding: 4px;
-  margin-top: -2%;
-}
-.success-message {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  color: rgb(95, 157, 1);
-}
-
-.success-message.visible {
-  opacity: 1;
-}
-.warning-text {
-  color: red;
-}
-
-
-.map {
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 620px;
-  margin-top: 60px;
-}
- 
