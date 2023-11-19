@@ -1,16 +1,18 @@
 import React from 'react'
 import Footer from '../Footer'
+import PageNotFound from '../PageNotFound'
+
+
+
 
 const NotFound = () => {
   return (
     
-    <div className='wrapper'>
-        
+    <div className='wrapper' style={{backgroundColor:  '#efe7cb', }}>
+           
             <main>
-              
-            <h1>404 Page Not Found</h1>
+            <PageNotFound />
             </main>
-        
             <Footer/>
     </div>
   )

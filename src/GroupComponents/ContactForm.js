@@ -111,7 +111,7 @@ const ContactForm = () => {
       />
       {errors.message && <p className="error warning-text">{errors.message}</p>}
 
-      <button type="submit" value="Send Message">
+      <button  type="submit" value="Send Message">
         <span className="text_button">
           <span> Send Message </span>
           <i className="fa-solid fa-square-arrow-up-right" />

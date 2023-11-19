@@ -6,7 +6,7 @@ import Artical1 from '../Assests/Images/image-artical1.png'
 import Image2 from '../Assests/Images/Image 2.png'
 import Image3 from '../Assests/Images/Image 3.png'
 import Image4 from '../Assests/Images/Image 4.png'
-import Button from './Geniral/Button'
+
 
 
 
@@ -28,9 +28,9 @@ const ProjectAndCase = () => {
               </div>
         
         
-            {/* <Button type="dark" text="All Recent Projects" url="/contacts" /> */}
+            
             <div class="center-contant">
-              <a class="btn-black" href="#">All Recent Projects<i class="fa-solid fa-square-arrow-up-right"></i></a>
+              <a class="btn-black" href="./services">All Recent Projects<i class="fa-solid fa-square-arrow-up-right"></i></a>
             </div>
         
       

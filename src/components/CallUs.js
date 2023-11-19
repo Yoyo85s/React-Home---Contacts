@@ -6,7 +6,7 @@ const CallUs = () => {
     
   <div className="box-call">
     <i className="fa-solid fa-location-dot" />
-    <div>
+    <div >
       <h4>Visit us</h4> <br /> 
       <p>Sveavägen 31 <br /> 111 34 STOCKHOLM</p>
     </div>
