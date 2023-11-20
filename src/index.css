@@ -1553,16 +1553,19 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
 
 /* Leave A Message */
 .message {
-  width: 1420px;
+
+  width: 1600px;
+ 
   text-align: center;
   text-align: center;
   background-color: #F0EFE9;
   display: flex;
   justify-content: center;
-  position: relative;
+  
+  
 }
 .message .message_content {
-  /* margin: 4rem 4rem 4rem 6rem; */
+  margin-right: 5%;
   background-color: #F0EFE9;
   width: 1600px;
   padding: 3rem;
