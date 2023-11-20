@@ -55,7 +55,6 @@ const ContactForm = () => {
           setIsSuccessVisible(true);
           setFormData(initialFormData);
           setErrors({});
-
           
           setTimeout(() => {
             setIsSuccessVisible(false);
@@ -70,58 +69,69 @@ const ContactForm = () => {
     }
   };
 
-  
   useEffect(() => {
     return () => {
       setSuccessMessage('');
     };
   }, []);
 
-
   return (
-    <form className="form_contact" onSubmit={handleSubmit}>
-      <div className={`success-message ${isSuccessVisible ? 'visible' : ''}`}>
-        {successMessage}
+    <div className="message">
+      <div className="message_content">
+        
+        <form className="form_contact" onSubmit={handleSubmit}>
+          <div className={`success-message ${isSuccessVisible ? 'visible' : ''}`}>
+            {successMessage}
+          </div>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Name*"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          {errors.name && <p className="error warning-text">{errors.name}</p>}
+
+          <input
+            type="email"
+            name="email"
+            placeholder="username@domain.com*"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          {errors.email && <p className="error warning-text">{errors.email}</p>}
+
+          <textarea
+            name="message"
+            placeholder="Your Message*"
+            rows={5}
+            value={formData.message}
+            onChange={handleChange}
+          />
+          {errors.message && <p className="error warning-text">{errors.message}</p>}
+
+          <button type="submit,btn-yellow " className="btn-yellow">
+            <span className="text_button">
+              <span> Send Message </span>
+              <i className="fa-solid fa-square-arrow-up-right" />
+            </span>
+          </button>
+        </form>
       </div>
-
-      <input
-        type="text"
-        name="name"
-        placeholder="Name*"
-        value={formData.name}
-        onChange={handleChange}
-      />
-      {errors.name && <p className="error warning-text">{errors.name}</p>}
-
-      <input
-        type="email"
-        name="email"
-        placeholder="username@domain.com*"
-        value={formData.email}
-        onChange={handleChange}
-      />
-      {errors.email && <p className="error warning-text">{errors.email}</p>}
-
-      <textarea
-        name="message"
-        placeholder="Your Message*"
-        rows={5}
-        value={formData.message}
-        onChange={handleChange}
-      />
-      {errors.message && <p className="error warning-text">{errors.message}</p>}
-
-      <button  type="submit" value="Send Message">
-        <span className="text_button">
-          <span> Send Message </span>
-          <i className="fa-solid fa-square-arrow-up-right" />
-        </span>
-      </button>
-    </form>
+    </div>
   );
-
-
-
 };
 
 export default ContactForm;
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 import React from 'react'
-import Karta from '../Assests/Images/Map.jpg'
+import Karta from '../Assests/Images/Map1.jpg'
 import '../index.css'
 
 

@@ -7,7 +7,7 @@ const LeaveMessage = () => {
   return (
     
 <div className="message">
-  <div className="message_cotent">
+  <div className="message_content">
     <div className="head_of_form">
       <p>Leave us a message </p>
       <p>for any information.</p>

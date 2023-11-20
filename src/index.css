@@ -1508,6 +1508,7 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
 .call-us {
   
   width: 1320px;
+  
   height: 206px;
   display: flex;
   justify-content: space-between;
@@ -1522,6 +1523,7 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
 }
 
 .call-us .box-call {
+  
   width: 420px;
   height: 206px;
   border: 1px solid #dfdcdc;
@@ -1551,19 +1553,22 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
 
 /* Leave A Message */
 .message {
-  width: auto;
+  width: 1420px;
+  text-align: center;
+  text-align: center;
+  background-color: #F0EFE9;
   display: flex;
   justify-content: center;
   position: relative;
 }
-.message .message_cotent {
-  margin: 4rem 4rem 4rem 6rem;
+.message .message_content {
+  /* margin: 4rem 4rem 4rem 6rem; */
   background-color: #F0EFE9;
-  width: 100%;
+  width: 1600px;
   padding: 3rem;
 }
 @media (max-width: 391px) {
-  .message .message_cotent {
+  .message .message_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1571,11 +1576,11 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
     width: auto;
     height: auto;
   }
-  .message .message_cotent .form_contact {
+  .message .message_content .form_contact {
     margin-right: 50%;
   }
 }
-.message .message_cotent .head_of_form {
+.message .message_content .head_of_form {
   display: grid;
   justify-content: center;
   font-size: 45px;
@@ -1584,11 +1589,11 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
   margin: 2rem 0;
 }
 @media (max-width: 391px) {
-  .message .message_cotent .head_of_form {
+  .message .message_content .head_of_form {
     margin-left: -6%;
   }
 }
-.message .message_cotent .form_contact {
+.message .message_content .form_contact {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -1596,32 +1601,22 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
   margin-left: 12rem;
   text-align: center;
 }
-.message .message_cotent .form_contact > input {
+.message .message_content .form_contact > input {
   border: none;
   height: 2.5rem;
   border-radius: 3rem;
   padding: 1.7rem;
 }
-.message .message_cotent .form_contact > textarea {
+.message .message_content .form_contact > textarea {
   border: none;
   border-radius: 2rem;
   padding: 1.7rem;
 }
-.message .message_cotent .form_contact:focus {
+.message .message_content .form_contact:focus {
   outline: none;
 }
-.message .message_cotent .form_contact > button {
-  border: none;
-  background-color: #f9d783;
-  height: 2.5rem;
-  border-radius: 3rem;
-  padding: 1.7rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  
-}
-.message .message_cotent .form_contact button .text_button {
+
+.message .message_content .form_contact button .text_button {
   font-size: 1rem;
   font-weight: 400;
   padding: 4px;
@@ -1642,8 +1637,10 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
 
 
 .map {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
+  text-align: center;
+  background-color: #F0EFE9;
+  
   height: 620px;
   margin-top: 60px;
 }
